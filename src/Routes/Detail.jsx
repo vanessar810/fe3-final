@@ -31,14 +31,32 @@ const Detail = () => {
     <div className={state.theme ? "dark" : "light"}>
     {loading ? ("Espera un momento por favor") : (
       <>
-      <h1>Detail Dentist {data.id} </h1>
-      <h1> Name: {data.name} </h1>
-      <h1> Email: {data.email} </h1>
-      <h1> Phone: {data.phone} </h1>
-      <h1> Website: {data.website} </h1>
-      <h2>{params.id}</h2>
+      <h4>Detail Dentist {data.id} </h4>
+      <table>
+        <thead>
+        <tr>
+         <th><h4> Name:</h4></th>
+         <th><h4>Email:</h4></th>
+         <th><h4>Phone:</h4></th>
+         <th><h4>Website:</h4></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <th> <h4>  {data.name} </h4></th>
+        <th>  <h4>  {data.email} </h4></th>
+        <th>  <h4>  {data.phone} </h4></th>
+        <th> <h4>  {data.website} </h4></th>
+        </tr>
+        </tbody>
+      
+     
+     
+      
+      {/* <h4>{params.id}</h4> */}
       {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
       {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
+      </table>
     </>
     )}
     </div>
