@@ -1,0 +1,142 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+}
+
+  .favButton{
+    background-color: rgba(136, 136, 136, 0.116);
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  nav{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    margin: 0 px 100px;
+    
+  }
+  
+  /* nav a{
+    color: #000;
+    text-decoration: none;
+    margin: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+  } */
+  /* a:hover{
+    color: rgb(136, 136, 136);
+  }  */
+  
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    /* width: 90%; */
+    height: 40px;
+    margin-top: 0rem;
+    align-items: center;
+}
+
+footer > img{
+    width: 30px;
+    margin: 1;
+    justify-content:space-between;
+    background-color: black;
+}
+
+footer > img1{
+    /* width: 10px;
+    height: 30px; */
+    margin: 1;
+    justify-content:space-between;
+    background-color: rgb(148, 202, 39);
+}
+
+.footer > p{
+    margin: 0;
+    padding-top: 0.7rem;
+}
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .card{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    border: 0.5px solid rgb(136, 136, 136);
+  }
+  
+  .card:hover{
+    border: 0.5px solid rgb(206, 217, 142);
+  }
+  
+  .card-grid{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 90vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .dark{
+    background-color: #12121296;
+    color: white;
+  }
+  .dark > a {
+    color: white;
+  }
+  
+  .light{
+    background-color: white;
+    color: black;
+  }
+  
+  h1{
+    text-align: center;
+    margin: 0px;
+  }
+  h2{
+    text-align: center;
+    margin: 0px;
+  }
+  h3,
+  h4 {
+    margin: 10px;
+  }
+  button {
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    min-width: 10px;
+    min-height: 30px;
+    background-color: firebrick;
+    color: #fff;
+    cursor: pointer;
+    padding: 1 px;
+  }
+  .list-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }

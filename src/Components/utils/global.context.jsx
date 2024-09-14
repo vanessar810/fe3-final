@@ -51,7 +51,6 @@ const toggleTheme = () => {
   );
 };
 export default ContextProvider;
-
 export const useContextGlobal = () => {
   return useContext(ContextGlobal)
 }

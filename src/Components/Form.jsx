@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Message from "./Message";
 
 
+
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
   const [customer, setCustomer] = useState({
@@ -52,8 +53,9 @@ const Form = () => {
         <label>Email:</label>
         <input type="text" value={customer.email} onChange={handleChangeEmail}/>
         <button>Enviar</button>
+        <button onClick={reset}>Reset form</button>
       </form>
-      <button onClick={reset}>Reset form</button>
+      
     </>
   )
 }

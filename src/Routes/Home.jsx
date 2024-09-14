@@ -9,9 +9,10 @@ const Home = () => {
   return (
     <div className={state.theme ? "dark" : "light"}>
       <h1>Home</h1>
-        {state.data.map((dentist) => (
+        <div className="list-container">{state.data.map((dentist) => (
           <Card key={dentist.id} dentist={dentist}/>
         ))}
+    </div>
     </div>
   )
 }

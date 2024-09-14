@@ -9,10 +9,11 @@ const Favs = () => {
   return (
       <div className={state.theme ? "dark" : "light"}>
         <h1>Dentists Favs</h1>
-        {state.fav.map((dentist) => ( 
+        <div className="list-container">{state.fav.map((dentist) => ( 
           <Card key={dentist.id} dentist={dentist}/>
 ))}
         </div> 
+        </div>
   );
 };
 
